@@ -9,7 +9,10 @@ html(lang="en")
     title Portfolio | main page
   body
     .wrapper
-      .maincontent
-        +image('content/user.jpg', 'user-pic')
-        +icon('link', 'link-class')
-        .icon-bg
+      include components/hero.pug
+      include components/skills.pug    
+      include components/slider.pug    
+      include components/reviews.pug   
+      include components/footer.pug   
+      include components/fixed-menu.pug   
+    include ./templates/entry.pug

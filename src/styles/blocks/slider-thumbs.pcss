@@ -1,0 +1,49 @@
+
+.slider-block__thumb{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 187px;
+
+  @include desktopHd {
+    width: 118px;
+  }
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.slider-block__thumb-item{
+  position: relative;
+  z-index: 1;
+  
+  // @include desktop {
+  //   max-height: calc(100%/3 - 2px);
+  // }
+
+  &:hover {
+    outline: 3px solid $main-accent-color;
+    z-index: 10;
+  }
+
+  &.active {
+    z-index: 10;
+    outline: 3px solid $main-accent-color;
+  }
+
+  &:active {
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(85, 0, 242, 0.4);
+      z-index: 2;
+    }
+    &:hover {
+      outline: 3px solid transparent;
+      z-index: 10;
+    }
+  }
+}

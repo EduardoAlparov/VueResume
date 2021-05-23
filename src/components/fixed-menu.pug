@@ -1,0 +1,32 @@
+.fixed-menu
+  .fixed-menu__logo
+    .header-logo ЭА
+  .fixed-menu__sidebar
+    .sidebar 
+      a.sidebar__close-icon
+        +icon('cross', 'sidebar__icon')
+      ul.sidebar__menu
+        li.sidebar__menu-item
+          a(href="#main").sidebar__menu-link#main Главная
+        li.sidebar__menu-item
+          a(href="#about").sidebar__menu-link#about Обо мне
+        li.sidebar__menu-item
+          a(href="#skills").sidebar__menu-link#skills Навыки 
+        li.sidebar__menu-item
+          a(href="#slider").sidebar__menu-link#slider Работы
+        li.sidebar__menu-item
+          a(href="#reviews").sidebar__menu-link#reviews Отзывы
+      .sidebar__socials 
+        ul.socials
+          li.social__item
+            a.socials__link
+              +icon('insta', 'socials__icon')
+          li.social__item
+            a.socials__link
+              +icon('github', 'socials__icon')
+          li.social__item
+            a.socials__link
+              +icon('vk', 'socials__icon')
+          li.social__item
+            a.socials__link
+              +icon('letter', 'socials__icon')

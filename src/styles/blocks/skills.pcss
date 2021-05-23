@@ -1,0 +1,166 @@
+.skills-section {
+  height: 100vh;
+
+  @include desktop  {
+    height: 100%;
+  }
+}
+
+.skills-contanier {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 142px;
+  padding-bottom: 346px;
+
+  @include desktop {
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+}
+
+.skills {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  
+  @include desktop {
+    justify-content: space-evenly;
+  }
+}
+
+.skills__head-text {
+  width: 40%;
+
+  @include desktop {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include tablets{
+    margin-bottom: 1.75em;
+    padding-top: 5em;
+  }
+}
+
+.skills__title{
+  margin-bottom: 3.75em;
+  font-size: 1.875em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 41px;
+
+  @include desktop {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 1.75em;
+  }
+
+  @include tablets{
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.skills__desc {
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+
+  @include desktop {
+    text-align: center;
+  }
+
+  @include tablets{
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.skills-row__list {
+  display: flex;
+
+  @include desktop {
+
+  }
+
+  @include tablets {
+    flex-wrap: wrap;
+  }
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50%;
+  margin-bottom: 100px;
+
+  @include desktop {
+    // margin-bottom: 0;
+    margin-left: 0;
+  }
+}
+
+.skills__item {
+  @include desktop {
+    margin-bottom: 2.635em;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.skills-row__title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  margin-bottom: 40px;
+
+  
+  @include desktop {
+    text-align: center;
+  }
+}
+
+.skills-row__item {
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include desktop {
+    margin-right: 2.25em;
+  }
+
+  @include tablets {
+    margin-right: 0;
+    width: calc(100%/2 );
+  }
+}
+
+
+.skills-pic__container{
+  position: absolute;
+  top: 25%;
+  // right: 0;
+  left: -135px;
+
+  @include desktop {
+    position: static;
+    width: 278PX;
+    height: 245PX;
+  }
+}

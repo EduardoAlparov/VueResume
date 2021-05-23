@@ -1,0 +1,67 @@
+main.hero-wrapper
+  section.hero-section#main-section
+    .container.hero-container
+      .header
+        .header-logo ЭА
+        .header-menu 
+          ul.menu
+            li.menu__item
+              a(href="#about").menu__link Обо мне
+            li.menu__item
+              a(href="#skills").menu__link Навыки 
+            li.menu__item
+              a(href="#slider").menu__link Работы
+            li.menu__item
+              a(href="#reviews").menu__link Отзывы
+        .header-socials
+          ul.socials
+            li.social__item
+              a.socials__link
+                +icon('insta', 'socials__icon')
+            li.social__item
+              a.socials__link
+                +icon('github', 'socials__icon')
+            li.social__item
+              a.socials__link
+                +icon('vk', 'socials__icon')
+            li.social__item
+              a.socials__link
+                +icon('letter', 'socials__icon')
+        .header-burger
+          button.btn-menu
+              i.btn-menu__bars
+      .hero 
+        div
+          h6 Личный сайт <br> веб-разработчика
+        div  
+          p Эдуард <br> Алпаров
+      .scroll-bar
+        a.scroll-bar__link
+          .scroll-bar__text Скролл
+          .scroll-bar__icon
+            +icon('scroll', 'scroll-icon')
+  section.about-section#about-section
+    .container.about-container
+      .about
+        .about__left-block 
+          .about__avatar
+            .about__avatar-container
+              +image('content/my_foto.jpg', 'about__foto')
+          .about__table
+            table
+              thead
+                tr
+                  th.key Проживаю
+                  th.value Казань
+                tr
+                  th.key Возраст
+                  th.value 31 год 
+                tr
+                  th.key Родился
+                  th.value 10 сентября 1989
+        .about__right-block 
+          .about__top-text
+            .salutation Привет, меня зовут
+            .name Эдуард Алпаров
+            .my-job Я занимаюсь разработкой современных сайтов и приложений.<br> Мне нравится делать интересные и современные проекты.
+          .desc Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!

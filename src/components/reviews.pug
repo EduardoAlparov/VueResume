@@ -1,0 +1,37 @@
+main.reviews-wrapper#reviews-section
+  section.reviews-section
+    .reviews-block
+      .container
+        .reviews-block__head
+          .reviews-block__title Что обо мне говорят
+          .reviews-block__buttons
+            button.reviews-block__button.reviews-block__button-left.disabled
+              +icon('arrow-down', 'reviews-buttons__arrow-left')
+            button.reviews-block__button.reviews-block__button-right
+              +icon('arrow-down', 'reviews-buttons__arrow-right')
+        .reviews-block__reviews-slider
+          ul.main-carousel.reviews
+            li.carousel-cell.review
+              .review__desc
+                .review__desc-commas
+                  +icon('quote', 'review__comma')
+                .review__desc-text 
+                  p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+              .review__author
+                .review__author-avatar 
+                  +image('content/dima.png', 'review__author-image')
+                .review__author-desc
+                  .review__author-name Ковальчук Дмитрий 
+                  .review__author-func Основатель Loftschool
+            li.carousel-cell.review
+              .review__desc
+                .review__desc-commas
+                  +icon('quote', 'review__comma')
+                .review__desc-text 
+                  p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+              .review__author
+                .review__author-avatar 
+                  +image('content/dima.png', 'review__author-image')
+                .review__author-desc
+                  .review__author-name Ковальчук Дмитрий 
+                  .review__author-func Основатель Loftschool

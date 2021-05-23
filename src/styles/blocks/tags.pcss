@@ -1,0 +1,24 @@
+.tags {
+  display: flex;
+
+  @include desktop {
+    justify-content: center;
+  }
+  @include tablets {
+    width: 100%;
+    justify-content: start;
+  }
+}
+
+.tags-item{
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.tag {
+  background: #F3F6F9;
+  border-radius: 40px;
+  padding: 14px 22px;
+}

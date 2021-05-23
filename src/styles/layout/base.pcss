@@ -18,6 +18,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $text-color;
+
+  @include desktop {
+    font-size: 14px;
+  }
 }
 
 .wrapper {
@@ -32,7 +36,22 @@ body {
   width: 95%;
   // width: 1490px;
 
+  @include desktopHd {
+    max-width: 1200px;    
+  }
+  
+  @include desktop{
+    max-width: 900px;
+    width: 85%;
+  }
+
+  @include tablets {
+    max-width: 700px;
+    width: 90%;
+  }
+
   @include phones {
+    max-width: 320px;
     width: 85%;
   }
 }

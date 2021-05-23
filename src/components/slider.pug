@@ -1,0 +1,45 @@
+section.slider-section#slider-section
+  .container.slider-container
+    .slider
+      .slider__title
+        p Мои работы
+      .slider-block
+        .slide-block__picture-section 
+          .slider-block__picture-content
+            +image('content/slide_1.jpg', 'slider-block__fulpic')
+            ul.slider-block__thumb
+              li.slider-block__thumb-item.active
+                a.slider-block__thumb-link(href="#")
+                  +image('content/slide_2.jpg', 'slider-block__thumb-pic')
+              li.slider-block__thumb-item
+                a.slider-block__thumb-link(href="#")
+                  +image('content/slide_3.jpg', 'slider-block__thumb-pic')
+              li.slider-block__thumb-item
+                a.slider-block__thumb-link(href="#")
+                  +image('content/slide_4.jpg', 'slider-block__thumb-pic')
+              li.slider-block__thumb-item
+                a.slider-block__thumb-link(href="#")
+                  +image('content/slide_5.jpg', 'slider-block__thumb-pic')
+            .slider-block__buttons 
+              .slider-buttons
+                button.slider-buttons__button-left
+                  +icon('arrow-down', 'slider-buttons__arrow-left')
+                button.slider-buttons__button-right.active
+                  +icon('arrow-down', 'slider-buttons__arrow-right')
+            .slide-block__info-number 2      
+        .slide-block__info-section 
+          .slide-block__info-container
+            .slide-block__info-tags
+              ul.tags 
+                - var tags = ['HTML', 'CSS', 'JavaScript'];
+                each item in tags
+                  li.tags-item 
+                    .tag #{item}
+                li.tags__item
+            .slide-block__info-sitename
+              p Сайт школы образования 
+            .slide-block__info-desc
+              p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+            .slide-block__info-link
+              a(href="#").slide-block__link Посмотреть сайт
+            

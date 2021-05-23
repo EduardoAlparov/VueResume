@@ -1,0 +1,16 @@
+.circle-container 
+  .skill
+    p.skill-title HTML
+    .second-circle
+      svg(width='150' height='150' xmlns='http://www.w3.org/2000/svg')
+        g
+          title Layer 1
+          circle#circle(r='70' cy='76' cx='76' stroke-width='8' stroke='rgba(70, 78, 98, .3)' fill='none')
+    svg(width='160' height='160' xmlns='http://www.w3.org/2000/svg')
+      g
+        title Layer 1
+        defs
+          lineargradient#Gradient-1(x1='0' y1='0' x2='100%' y2='0')
+            stop(offset='0%' stop-color='#7C00EA')
+            stop.right(offset='100%' stop-color='#4A00ED')
+        circle#circle.circle_animation(r='70' cy='81' cx='81' stroke-width='15' stroke='url(#Gradient-1)' fill='none')
